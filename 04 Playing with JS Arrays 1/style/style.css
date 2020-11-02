@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7d6fe;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 85%;
+    background-color: #e7d6fe;
+}
+
+h1 {
+    font-size: 4vw;
+    font-family: 'Henny Penny', cursive;
+}
+
+span {
+    animation: colorChange 15s cubic-bezier(0,.72,.47,.23) infinite;
+}
+
+@keyframes colorChange {
+    0% { color: #ff0d00; }
+    8% { color: #ff3c00; }
+    16% { color: #ffae00; }
+    24% { color: #b3ff00; }
+    30% { color: #66ff00; }
+    38% { color: #00ff40; }
+    45% { color: #00ff62; }
+    50% { color: #ff0d00; }
+    57% { color: #00ffdd; }
+    65% { color: rgb(0, 195, 255); }
+    70% { color: rgb(0, 38, 255); }
+    78% { color: #7700ff; }
+    85% { color: #ea00ff; }
+    90% { color: #ff00b3; }
+    95% { color: #ff002b; }
+}
+
+img {
+    max-width: 85%;
+    max-height: 85%;
+}
+
+@media (max-width: 480px) {
+    div {
+        width: 95%;
+        height: 95%;
+    }
+
+    img {
+        max-width: 95%;
+        max-height: 95%;
+    }
+
+    h1 {
+        font-size: 9vw;
+    }
+    
+}
