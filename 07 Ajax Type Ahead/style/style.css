@@ -99,13 +99,32 @@ ul li:hover {
     display: none;
 }
 
+@media (max-width: 768px) {
+    .search {
+        max-width: 60%;
+    }
+
+    input {
+        font-size: 5vw;
+    }
+
+    .line {
+        width: 50%;
+        border-bottom: 0.5vw solid red;
+    }
+
+    .span-focus {
+        width: 100%;
+    }
+}
+
 @media (max-width: 480px) {
     .search {
         max-width: 80%;
     }
 
     input {
-        font-size: 9vw;
+        font-size: 8.5vw;
     }
 
     .line {

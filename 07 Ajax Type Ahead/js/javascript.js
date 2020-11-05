@@ -45,7 +45,7 @@ function displayCity()
         const cityName = e.name.replace(regex, `<span class="highlight">${this.value}</span>`);
         const stateName = e.state.replace(regex, `<span class="highlight">${this.value}</span>`);
 
-        return `<li>${cityName}, ${stateName}</li>`;
+        return `<li>${cityName.toLowerCase()}, ${stateName.toLowerCase()}</li>`;
     }).join("");
     
     display.innerHTML = showCity;
