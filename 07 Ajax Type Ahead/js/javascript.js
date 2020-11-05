@@ -2,22 +2,16 @@ inputFocus = document.querySelector("input");
 spanFocus = document.querySelector(".line");
 display = document.querySelector("ul");
 
-display.addEventListener("click", () => {
-    console.log("hide");
-});
-
 inputFocus.addEventListener("focusin", () => {
     spanFocus.classList.add("span-focus");
-    display.classList.remove("hide");
+    if (inputFocus.value != "")
+        display.classList.remove("hide");
 });
 
 inputFocus.addEventListener("focusout", () => {
-    spanFocus.classList.remove("span-focus");
     display.classList.add("hide");
-});
-
-display.addEventListener("click", () => {
-    console.log("hide");
+    if (inputFocus.value == "")
+        spanFocus.classList.remove("span-focus");
 });
 
 const dataURL = "https://raw.githubusercontent.com/nshntarora/Indian-Cities-JSON/master/cities.json";
@@ -49,6 +43,11 @@ function displayCity()
     }).join("");
     
     display.innerHTML = showCity;
+
+    if (inputFocus.value == "")
+        display.classList.add("hide");
+    else
+        display.classList.remove("hide");   
 }
 
 inputFocus.addEventListener("change", displayCity);

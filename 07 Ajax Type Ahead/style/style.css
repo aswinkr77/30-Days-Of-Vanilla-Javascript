@@ -50,7 +50,7 @@ input {
     width: 100%;
     margin: auto;
     text-align: center;
-    font-size: 3.5vw;
+    font-size: 3vw;
     z-index: 2;
     border: 0;
     border-bottom-width: 2px;
@@ -89,6 +89,7 @@ ul li {
 
 ul li:hover {
     cursor: pointer;
+    background-color: #e0e0de;
 }
 
 .highlight {
