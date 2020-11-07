@@ -4,7 +4,6 @@ const context = canvas.getContext("2d");
 var canvasW = canvas.offsetWidth;
 var canvasH = canvas.offsetHeight;
 
-console.log(canvasH, canvasW);
 canvas.style.width = canvasW + "px";
 canvas.style.height = canvasH + "px";
 

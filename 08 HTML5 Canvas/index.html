@@ -9,7 +9,22 @@
         <title>Canvas</title>
     </head>
     <body>
-        <canvas></canvas>
+        <div class="container">
+            <ol class="tools">
+                <li>
+                    <label for="brushSize">Brush Size:</label>
+                    <input id="blur" type="range" name="brushSize" min="0" max="25" val="0" data-sizing="px">
+                </li>
+                <li>
+                    <label for="brushColor">Brush Color: </label>
+                    <input id="brushColor" type="color" name="brushColor" value="#fc1703">
+                </li>
+                <li>
+                    <button>Clear</button>
+                </li>
+            </ol>
+            <canvas></canvas>
+        </div>
 
         <!-- JS File-->
         <script src="js/javascript.js"></script>
