@@ -23,7 +23,7 @@ ol {
     width: 85%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 li {
@@ -38,7 +38,7 @@ li:nth-child(1) label {
 input[type=range] {
     position: relative;
     top: 3px;
-    width: 80px;
+    width: 100px;
 }
 
 button {
